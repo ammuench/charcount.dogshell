@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" class="h-dvh w-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body class="w-full h-full bg-sky-950 p-4">
+    <div
+      class="h-full w-full items-center justify-items-center grid grid-rows-[auto_1fr_auto] grid-cols-1 gap-8"
+    >
+      <h1 class="text-5xl text-sky-50 font-bold underline underline-offset-4">
+        char.count
+      </h1>
+      <textarea
+        id="chars"
+        class="bg-sky-300 w-11/12 h-full p-4 rounded-lg font-semibold border-sky-50 border-4"
+      ></textarea>
+      <p class="text-sky-50 text-lg">
+        the above text contains
+        <span id="charcount" class="font-bold text-xl">0</span> characters and
+        <span id="wordcount" class="font-bold text-xl">0</span> words
+      </p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/wordcounter.ts"></script>
+  </body>
+</html>
